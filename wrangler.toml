@@ -4,3 +4,8 @@ main = "src/index.tsx"
 
 [ai]
 binding = "AI"
+
+# 指定自有網域的 Route
+routes = [
+  { pattern = "jarvis-core.anelive.today/*", script = "jarvis-core-worker" }
+]
